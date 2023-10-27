@@ -1,0 +1,8 @@
+#!/usr/bin/bash env
+# a function that prints some strings for nth times
+
+
+for ((i=0; i<10; i++)))
+do
+	echo "Best School"
+done
