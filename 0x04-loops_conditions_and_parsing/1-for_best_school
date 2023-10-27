@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# a function that prints some strings for nth times
+# Bash script that displays Best School 10 times
 
 
 for ((i=0; i<10; i++)))
