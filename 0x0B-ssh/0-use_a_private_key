@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Connecting to a server using username and hostname
+
+ssh -i ~/.ssh/school ubuntu@100.25.140.106
