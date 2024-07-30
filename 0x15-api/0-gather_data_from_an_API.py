@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""script that, using this REST API, for a given employee ID"""
+"""Accessing a REST API for todo lists of employees"""
 
 import requests
 import sys
