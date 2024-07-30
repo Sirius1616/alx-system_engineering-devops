@@ -8,7 +8,7 @@ import sys
 
 if __name__ == '__main__':
     user_id = sys.argv[1]
-    base_url = "https://jsonplaceholder.typicode.com/"
+    base_url = "https://jsonplaceholder.typicode.com/users"
     url = base_url + "/" + user_id
 
     response = requests.get(url)
@@ -24,7 +24,7 @@ if __name__ == '__main__':
     done_task = []
 
     for task in tasks:
-        if tasks.get('completed'):
+        if task.get('completed'):
             done_task.append(task)
             done += 1
 
