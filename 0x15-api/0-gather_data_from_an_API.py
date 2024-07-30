@@ -11,7 +11,7 @@ if __name__ == '__main__':
     url = baseUrl + "/" + employeeId
 
     response = requests.get(url)
-    employeeName = response.json().get('name')
+    EMPLOYEE_NAME = response.json().get('name')
 
     todoUrl = url + "/todos"
     response = requests.get(todoUrl)
@@ -25,7 +25,7 @@ if __name__ == '__main__':
             done += 1
 
     print("Employee {} is done with tasks({}/{}):"
-          .format(employeeName, done, len(tasks)))
+          .format(EMPLOYEE_NAME, done, len(tasks)))
 
     for task in done_tasks:
         print("\t {}".format(task.get('title')))
